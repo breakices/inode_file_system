@@ -13,6 +13,8 @@
 #define IP "10.0.8.17"
 #define PORT 7000
 
+void *sign_in(void *pth_arg);
+
 void print_err(char *str, int line, int err_no) {
 	printf("%d, %s :%s\n",line,str,strerror(err_no));
 	_exit(-1);
